@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Om Jett</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Toko Baju Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di Toko Baju Kami!</h2>
+            <p>Temukan berbagai koleksi baju terbaru dan terlengkap.</p>
+        </section>
+
+        <section id="products">
+            <h2>Produk Kami</h2>
+            <div class="product" id="product1">
+                <h3>Baju Kemeja</h3>
+                <img src="https://via.placeholder.com/150" alt="Baju Kemeja">
+                <p>Harga: Rp 150.000</p>
+                <p>Deskripsi: Baju kemeja berkualitas tinggi, nyaman dipakai untuk berbagai acara.</p>
+                <p>Rating: 
+                    <span class="stars" data-product="product1" onclick="rateProduct('product1', 1)">★</span>
+                    <span class="stars" data-product="product1" onclick="rateProduct('product1', 2)">★</span>
+                    <span class="stars" data-product="product1" onclick="rateProduct('product1', 3)">★</span>
+                    <span class="stars" data-product="product1" onclick="rateProduct('product1', 4)">★</span>
+                    <span class="stars" data-product="product1" onclick="rateProduct('product1', 5)">★</span>
+                </p>
+                <button onclick="addToCart('Baju Kemeja', 150000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product" id="product2">
+                <h3>Baju Kaos</h3>
+                <img src="https://via.placeholder.com/150" alt="Baju Kaos">
+                <p>Harga: Rp 100.000</p>
+                <p>Deskripsi: Baju kemeja berkualitas tinggi, nyaman dipakai untuk berbagai acara.</p>
+                <p>Rating: 
+                    <span class="stars" data-product="product1" onclick="rateProduct('product1', 1)">★</span>
+                    <span class="stars" data-product="product1" onclick="rateProduct('product1', 2)">★</span>
+                    <span class="stars" data-product="product1" onclick="rateProduct('product1', 3)">★</span>
+                    <span class="stars" data-product="product1" onclick="rateProduct('product1', 4)">★</span>
+                    <span class="stars" data-product="product1" onclick="rateProduct('product1', 5)">★</span>
+                </p>
+                <button onclick="addToCart('Baju Kaos', 100000)">Tambah ke Keranjang</button>
+            </div>
+            <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+        </section>
+
+        <section id="contact">
+            <h2>Kontak Kami</h2>
+            <p>Email: info@tokobaju.com</p>
+            <p>Telepon: 00000000000</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Toko Baju Online. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
